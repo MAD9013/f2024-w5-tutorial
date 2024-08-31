@@ -1,0 +1,145 @@
+/* - - - - - - - - - - Column Widths - - - - - - - - - - */
+
+.xs-1 {
+  width: 100%;
+}
+
+.xs-1-2 {
+  width: 50%;
+}
+
+@media only screen and (min-width: 25em) {
+  .s-1 {
+    width: 100%;
+  }
+
+  .s-1-2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .m-1 {
+    width: 100%;
+  }
+
+  .m-1-2 {
+    width: 50%;
+  }
+
+  .m-1-4 {
+    width: 25%;
+  }
+
+  .m-3-4 {
+    width: 75%;
+  }
+
+  .m-1-3 {
+    width: 33.3333%;
+  }
+
+  .m-2-3 {
+    width: 66.6666%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .l-1 {
+    width: 100%;
+  }
+
+  .l-1-2 {
+    width: 50%;
+  }
+
+  .l-1-4 {
+    width: 25%;
+  }
+
+  .l-3-4 {
+    width: 75%;
+  }
+
+  .l-1-3 {
+    width: 33.3333%;
+  }
+
+  .l-2-3 {
+    width: 66.6666%;
+  }
+}
+
+.row-cards {
+  padding: 0.5rem;
+  list-style-type: none;
+}
+
+.row-cards .col {
+  padding: 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* - - - - - - - - - - Enter your CSS Below - - - - - - - - - - */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-cards .col {
+  display: flex;
+}
+
+.row-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row-cards .card__content {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.row-cards .card__text {
+  flex-grow: 2;
+}
+
+.split-content .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media only screen and (min-width: 45em) {
+  .split-content .container {
+    flex-direction: unset;
+    align-items: center;
+  }
+
+  .split-content__img {
+    flex: 1 1 5rem;
+  }
+
+  .split-content__content {
+    flex: 2 1 5rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .split-content__img {
+    flex: 1 1 5rem;
+  }
+
+  .split-content__content {
+    flex: 1 1 5rem;
+    padding: 2rem;
+  }
+}

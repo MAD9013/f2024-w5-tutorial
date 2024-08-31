@@ -1,0 +1,17 @@
+.icon {
+  text-decoration: none;
+  color: #23272e;
+}
+
+.icon:hover,
+.icon:focus-visible {
+  color: #387bb2;
+}
+
+/* Horizontal Card */
+
+.h-card {
+  border: 0.125rem solid #ccc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

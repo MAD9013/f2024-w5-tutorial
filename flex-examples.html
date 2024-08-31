@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Ensures that the text characters are displayed properly -->
+    <meta charset="UTF-8" />
+
+    <!-- Properly sizes content across different browser window sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      The site title displayed in the browser tab.
+      Also used for Search Engine Optimization (SEO),
+      Google results, and accessibility tools/screen readers.
+    -->
+    <title>Flex Examples | W5 - Flexbox</title>
+
+    <!-- Loads custom supporting CSS stylesheet(s) -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar-flex.css" />
+
+    <!-- Loads lesson specific CSS stylesheet -->
+    <link rel="stylesheet" href="./css/flex-examples.css" />
+
+    <!-- Loads fonts from Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Loads Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body id="page">
+    <!--
+      Accessibility feature that allows users to
+      quickly skip to key areas on the page.
+    -->
+    <ul class="skip-links">
+      <li>
+        <a class="skip-links__link" href="#nav">Skip to site navigation</a>
+      </li>
+      <li>
+        <a class="skip-links__link" href="#main">Skip to main content</a>
+      </li>
+    </ul>
+
+    <!--
+      Main site header. Features our site logo and navigation.
+    -->
+    <header class="navbar">
+      <div class="container">
+        <strong class="navbar__headline">
+          <a href="/" class="navbar__logo">
+            <span class="navbar__week">Week 5</span>
+            <span class="navbar__title">Flexbox</span>
+          </a>
+        </strong>
+        <button
+          class="navbar__toggle"
+          aria-label="Click to open mobile navigation"
+        >
+          <span class="navbar__tog navbar__tog--top"></span>
+          <span class="navbar__tog navbar__tog--middle"></span>
+          <span class="navbar__tog navbar__tog--bottom"></span>
+        </button>
+        <nav id="nav" class="navbar__nav">
+          <ul class="navbar__list">
+            <li>
+              <a href="./flex-basics.html" class="navbar__link">Basics</a>
+            </li>
+            <li>
+              <a
+                href="./flex-examples.html"
+                class="navbar__link"
+                aria-current="page"
+              >
+                Examples
+              </a>
+            </li>
+            <li>
+              <a href="./flex-layouts.html" class="navbar__link">Layouts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+      The main contains ALL of the content unique to this page.
+      Every page MUST have exactly one `main` that is a direct child of `body`.
+    -->
+    <main id="main">
+      <header class="banner">
+        <div class="container">
+          <div class="container--text">
+            <h1 class="banner__headline">Examples</h1>
+            <div class="banner__byline">
+              <p>
+                Now that we understand the basics, let's experiment with some
+                small scale, practical&nbsp;examples.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 
+        ====================================================
+        ============== TUTORIAL CONTENT START ==============
+        ====================================================
+      -->
+
+      <section>
+        <div class="container">
+          <h2>Icons With Flex</h2>
+
+          <a class="icon" href="#">
+            <i class="material-symbols-outlined">groups</i>
+            <span class="icon__label">Groups</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Icon Groups With Flex</h2>
+
+          <ul class="icon-list icon-list--basic">
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">groups</i>
+                <span class="icon__label">Groups</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">favorite</i>
+                <span class="icon__label">Favorites</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">settings</i>
+                <span class="icon__label">Settings</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="icon-list icon-list--bar">
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">groups</i>
+                <span class="icon__label">Groups</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">favorite</i>
+                <span class="icon__label">Favorites</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="#">
+                <i class="material-symbols-outlined">settings</i>
+                <span class="icon__label">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Horizontal Card With Flex</h2>
+
+          <div class="h-card">
+            <div class="h-card__img">
+              <img
+                src="https://placedog.net/500/500?random"
+                alt="A random cute dog"
+              />
+            </div>
+
+            <div class="h-card__content">
+              <h3 class="h-card__title">
+                A Cute Dog
+                <button class="h-card__icon" href="#">
+                  <i class="material-symbols-outlined">favorite</i>
+                </button>
+              </h3>
+              <p class="h-card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                distinctio unde dolore dolor.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        ====================================================
+        =============== TUTORIAL CONTENT END ===============
+        ====================================================
+      -->
+    </main>
+
+    <aside>
+      <div class="container">
+        <div class="container--text">
+          <h2>Material Icons</h2>
+          <p>
+            To use the icons, I have included the
+            <a href="https://fonts.google.com/icons">Material Symbols</a> font
+            from Google Fonts. To add an icon, add an <code>i</code> tag with a
+            class of <code>material-symbols-outlined</code>. This will apply a
+            special font that examines the content you put inside of the
+            <code>i</code> determines what icon to display based on a list of
+            existing icons.
+          </p>
+          <ul class="icon-list icon-list--basic">
+            <li>
+              <a class="icon" href="https://fonts.google.com/icons">
+                <i class="material-symbols-outlined">list</i>
+                <span class="icon__label">List of Icons</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="https://developers.google.com/fonts/docs/material_symbols"
+              >
+                <i class="material-symbols-outlined">code</i>
+                <span class="icon__label">Developer Guide</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!--
+      Site footer. Contains site logo and legal info.
+      
+      Could also contain other concluding information such
+      as repeating the navigation, contact info, and more.
+    -->
+    <footer class="footer">
+      <div class="container container--grid">
+        <div class="footer__column">
+          <a href="/" class="footer__logo">
+            <span class="footer__week">Week 5</span>
+            <span class="footer__title">Flexbox</span>
+          </a>
+        </div>
+
+        <div class="footer__column footer__column--legal">
+          <small>
+            Created for
+            <a href="https://mad9013.github.io/F2023/">MAD9013 course</a> and
+            free for any use.
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Accessibility feature: return to top button -->
+    <a href="#page" class="to-top">To Top</a>
+
+    <!--
+      Adds a layer when the mobile navigation is open that
+      allows users to click to the side and auto close the nav
+    -->
+    <div class="click-to-close"></div>
+
+    <!-- Loads custom JavaScript file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

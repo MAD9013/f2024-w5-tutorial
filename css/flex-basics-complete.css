@@ -1,0 +1,93 @@
+/* - - - - - - - - - - Basic Row - - - - - - - - - - */
+
+.basic-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.basic-row .one {
+  flex: 2 1 3rem;
+}
+
+.basic-row .two {
+  flex: 2 1 3rem;
+}
+
+.basic-row .three {
+  flex: 5 1 3rem;
+}
+
+.basic-row .four {
+  flex: 1 1 3rem;
+}
+
+/* - - - - - - - - - - Row Alignment - - - - - - - - - - */
+
+.align-row {
+  display: flex;
+  /* align-items: center; */
+}
+
+.align-row .one {
+  flex: 25%;
+}
+
+.align-row .two {
+  flex: 25%;
+  align-self: flex-start;
+}
+
+.align-row .three {
+  flex: 25%;
+}
+
+.align-row .four {
+  flex: 25%;
+  align-self: flex-end;
+}
+
+/* - - - - - - - - - - Basic Col - - - - - - - - - - */
+
+.basic-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+}
+
+.basic-col .one {
+  flex: 1 1 3rem;
+}
+
+.basic-col .two {
+  flex: 1 1 3rem;
+}
+
+.basic-col .three {
+  flex: 1 1 3rem;
+}
+
+.basic-col .four {
+  flex: 1 1 3rem;
+}
+
+/* - - - - - - - - - - Col Alignment - - - - - - - - - - */
+
+.align-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-col .one {
+}
+
+.align-col .two {
+}
+
+.align-col .three {
+}
+
+.align-col .four {
+}
