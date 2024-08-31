@@ -51,6 +51,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   color: var(--color-primary);
+  font-family: var(--font-primary);
   line-height: 1.5;
 }
 
